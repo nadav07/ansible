@@ -1,0 +1,21 @@
+{
+  "name": "Ansible DevContainer",
+  "image": "ghcr.io/ansible/creator-ee:latest",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.ansible",
+        "redhat.vscode-yaml"
+      ],
+      "settings": {
+        "ansible.executionEnvironment.enabled": false,
+        "ansible.validation.enabled": true,
+        "ansible.validation.lint.enabled": true,
+        "yaml.validate": true,
+        "editor.formatOnSave": true
+      }
+    }
+  },
+  "remoteUser": "root",
+  "postCreateCommand": "python3 -m pip install -U pip ansible-dev-tools || true"
+}
