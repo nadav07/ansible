@@ -1,4 +1,4 @@
 {
-    "ansible.python.interpreterPath": "c:\\Users\\nadava\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "ansible.python.interpreterPath": "/usr/bin/python",
     "editor.codeActionsOnSave": {}
 }
